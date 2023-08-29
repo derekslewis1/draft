@@ -22,6 +22,7 @@ mongoose.connect(process.env.MONGO_URI, {
   .then(() => console.log("DB connected"))
   .catch(err => console.error(err));
 
+console.log(process.env.MONGO_URI);
 
 const cors = require('cors');
 app.use(cors({
