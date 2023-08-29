@@ -23,7 +23,7 @@ const Home = () => {
 
       if (response.ok) {
         console.log('User added successfully');
-        window.location.href = 'https://draft-eysmxb8db-derekslewis1.vercel.app/join';
+        window.location.href = 'https://draft-ten.vercel.app/join';
       } else {
         console.error('Error adding user');
       }

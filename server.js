@@ -5,7 +5,7 @@ const app = express();
 const server = http.createServer(app);
 const io = require('socket.io')(server, {
   cors: {
-    origin: "https://draft-eysmxb8db-derekslewis1.vercel.app", // your client-side URL
+    origin: "https://draft-ten.vercel.app", // your client-side URL
     methods: ["GET", "POST"],
     credentials: true
   }
@@ -25,7 +25,7 @@ mongoose.connect(process.env.MONGO_URI, {
 
 const cors = require('cors');
 app.use(cors({
-  origin: 'https://draft-eysmxb8db-derekslewis1.vercel.app', // your client-side URL
+  origin: 'https://draft-ten.vercel.app', // your client-side URL
   methods: ['GET', 'POST'],
   credentials: true // This allows the session cookie to be sent back and forth
 }));
