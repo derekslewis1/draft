@@ -92,7 +92,7 @@ const join = () => {
   }, []);
 
   useEffect(() => {
-    fetch('http://localhost:3001/join')
+    fetch('https://ghmp-d7e7a0e5943b.herokuapp.com/join')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');

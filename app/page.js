@@ -13,7 +13,7 @@ const Home = () => {
     event.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:3001/join', {
+      const response = await fetch('https://ghmp-d7e7a0e5943b.herokuapp.com/join', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
