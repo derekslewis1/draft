@@ -130,7 +130,7 @@ const join = () => {
 
   const startDraft = async () => {
     try {
-      await fetch('http://localhost:3001/start-draft', { method: 'POST' });
+      await fetch('https://ghmp-d7e7a0e5943b.herokuapp.com/start-draft', { method: 'POST' });
     } catch (error) {
       console.error("Error Starting Draft:", error)
     }

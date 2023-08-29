@@ -23,7 +23,7 @@ const Home = () => {
 
       if (response.ok) {
         console.log('User added successfully');
-        window.location.href = '/join';
+        window.location.href = 'https://ghmp-d7e7a0e5943b.herokuapp.com/join';
       } else {
         console.error('Error adding user');
       }

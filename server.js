@@ -5,7 +5,7 @@ const app = express();
 const server = http.createServer(app);
 const io = require('socket.io')(server, {
   cors: {
-    origin: "http://localhost:3000", // your client-side URL
+    origin: "https://draft-eysmxb8db-derekslewis1.vercel.app", // your client-side URL
     methods: ["GET", "POST"],
     credentials: true
   }
@@ -25,7 +25,7 @@ mongoose.connect(process.env.MONGO_URI, {
 
 const cors = require('cors');
 app.use(cors({
-  origin: 'http://localhost:3000', // your client-side URL
+  origin: 'https://draft-eysmxb8db-derekslewis1.vercel.app', // your client-side URL
   methods: ['GET', 'POST'],
   credentials: true // This allows the session cookie to be sent back and forth
 }));
@@ -88,11 +88,11 @@ app.use('*', (req, res) => {
   res.status(405).json({ message: 'Method not allowed.' });
 });
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 server.listen(PORT, '0.0.0.0', ()=> {
   
-  console.log("Server is listening on port 3001")
+  console.log("Server is listening")
 
 })
 
