@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import '../app/globals.css';
 import io from 'socket.io-client';
 
-const socket = io('https://ghmp-d7e7a0e5943b.herokuapp.com', {
+const socket = io('https://ghmp-d7e7a0e5943b.herokuapp.com/', {
   withCredentials: true
 });
 
